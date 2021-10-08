@@ -1,0 +1,92 @@
+.ca-button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  &.ca-button-primary {
+    font-size: 20px;
+  }
+  &.ca-button.ca-button-secondary {
+    font-size: 20px;
+  }
+  &.ca-button.ca-button-default {
+    font-size: 32px;
+  }
+}
+body[theme="blue"] .ca-button.ca-button-primary {
+  background-color: $blue_primary;
+  border-bottom: 5px solid darken($blue_primary, $amount: 10);
+  color: $white;
+  &:hover {
+    background-color: $blue_primary_hover;
+  }
+}
+body[theme="blue"] .ca-button.ca-button-secondary {
+  background-color: $blue_secondary;
+  border-bottom: 5px solid darken($blue_secondary, $amount: 10);
+  color: $white;
+  &:hover {
+    background-color: $blue_secondary_hover;
+  }
+}
+body[theme="blue"] .ca-button.ca-button-default {
+  background-color: $blue_default;
+  border-bottom: 5px solid darken($blue_default, $amount: 20);
+  color: $blue_text_default;
+  &:hover {
+    background-color: $blue_default_hover;
+  }
+}
+
+body[theme="white"] .ca-button.ca-button-primary {
+  background-color: $white_primary;
+  border-bottom: 5px solid darken($white_primary, $amount: 20);
+  color: $white;
+  &:hover {
+    background-color: $white_primary_hover;
+  }
+}
+body[theme="white"] .ca-button.ca-button-secondary {
+  background-color: $white_secondary;
+  border-bottom: 5px solid darken($white_secondary, $amount: 20);
+  color: $white;
+  &:hover {
+    background-color: $white_secondary_hover;
+  }
+}
+body[theme="white"] .ca-button.ca-button-default {
+  background-color: $white_default;
+  border-bottom: 5px solid darken($white_default, $amount: 30);
+  color: $white_text_default;
+  &:hover {
+    background-color: $white_default_hover;
+  }
+}
+
+body[theme="purple"] .ca-button.ca-button-primary {
+  background-color: $purple_primary;
+  border-bottom: 5px solid lighten($purple_primary, $amount: 5);
+  color: $black;
+  &:hover {
+    background-color: $purple_primary_hover;
+  }
+}
+body[theme="purple"] .ca-button.ca-button-secondary {
+  background-color: $purple_secondary;
+  border-bottom: 5px solid lighten($purple_secondary, $amount: 20);
+  color: $white;
+  &:hover {
+    background-color: $purple_secondary_hover;
+  }
+}
+body[theme="purple"] .ca-button.ca-button-default {
+  background-color: $purple_default;
+  border-bottom: 5px solid lighten($purple_default, $amount: 30);
+  color: $purple_text_default;
+  &:hover {
+    background-color: $purple_default_hover;
+  }
+}

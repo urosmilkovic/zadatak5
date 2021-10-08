@@ -1,0 +1,245 @@
+body {
+  box-sizing: border-box;
+  margin: 0px; }
+  body * {
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px; }
+
+.ca-button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 700;
+  cursor: pointer; }
+  .ca-button.ca-button-primary {
+    font-size: 20px; }
+  .ca-button.ca-button.ca-button-secondary {
+    font-size: 20px; }
+  .ca-button.ca-button.ca-button-default {
+    font-size: 32px; }
+
+body[theme="blue"] .ca-button.ca-button-primary {
+  background-color: #d03f2f;
+  border-bottom: 5px solid #a63226;
+  color: #ffffff; }
+  body[theme="blue"] .ca-button.ca-button-primary:hover {
+    background-color: #f96b5b; }
+
+body[theme="blue"] .ca-button.ca-button-secondary {
+  background-color: #647198;
+  border-bottom: 5px solid #505a79;
+  color: #ffffff; }
+  body[theme="blue"] .ca-button.ca-button-secondary:hover {
+    background-color: #a2b2e1; }
+
+body[theme="blue"] .ca-button.ca-button-default {
+  background-color: #eae3dc;
+  border-bottom: 5px solid #c4b09c;
+  color: #434a59; }
+  body[theme="blue"] .ca-button.ca-button-default:hover {
+    background-color: #ffffff; }
+
+body[theme="white"] .ca-button.ca-button-primary {
+  background-color: #c85402;
+  border-bottom: 5px solid #632a01;
+  color: #ffffff; }
+  body[theme="white"] .ca-button.ca-button-primary:hover {
+    background-color: #ff8a38; }
+
+body[theme="white"] .ca-button.ca-button-secondary {
+  background-color: #378187;
+  border-bottom: 5px solid #193c3f;
+  color: #ffffff; }
+  body[theme="white"] .ca-button.ca-button-secondary:hover {
+    background-color: #62b5bc; }
+
+body[theme="white"] .ca-button.ca-button-default {
+  background-color: #e5e4e1;
+  border-bottom: 5px solid #9e9a8f;
+  color: #36362c; }
+  body[theme="white"] .ca-button.ca-button-default:hover {
+    background-color: #ffffff; }
+
+body[theme="purple"] .ca-button.ca-button-primary {
+  background-color: #00ded0;
+  border-bottom: 5px solid #00f8e8;
+  color: #000000; }
+  body[theme="purple"] .ca-button.ca-button-primary:hover {
+    background-color: #93fff8; }
+
+body[theme="purple"] .ca-button.ca-button-secondary {
+  background-color: #56077c;
+  border-bottom: 5px solid #990cdd;
+  color: #ffffff; }
+  body[theme="purple"] .ca-button.ca-button-secondary:hover {
+    background-color: #8631af; }
+
+body[theme="purple"] .ca-button.ca-button-default {
+  background-color: #331c4d;
+  border-bottom: 5px solid #7d46bc;
+  color: #ffe53d; }
+  body[theme="purple"] .ca-button.ca-button-default:hover {
+    background-color: #6c34ac; }
+
+body[theme="blue"] {
+  background-color: #3a4663; }
+
+body[theme="white"] {
+  background-color: #e6e6e6; }
+
+body[theme="purple"] {
+  background-color: #17062a; }
+
+.ca-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; }
+  .ca-wrapper .ca-calculator {
+    width: 100%;
+    max-width: 540px; }
+    .ca-wrapper .ca-calculator .ca-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+
+.ca-nav-logo {
+  font-size: 32px;
+  font-weight: 700; }
+
+.ca-nav-theme {
+  display: flex;
+  align-items: center;
+  user-select: none; }
+  .ca-nav-theme .ca-nav-theme-label {
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bold; }
+  .ca-nav-theme .ca-nav-theme-switch {
+    width: 60px;
+    height: 18px;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer; }
+    .ca-nav-theme .ca-nav-theme-switch::before {
+      content: "1 2 3";
+      position: absolute;
+      font-weight: bold;
+      left: 50%;
+      top: -15px;
+      font-size: 12px;
+      transform: translateX(-50%);
+      letter-spacing: 5px;
+      margin-left: 3px;
+      white-space: nowrap; }
+    .ca-nav-theme .ca-nav-theme-switch span {
+      display: block;
+      width: 14px;
+      height: 14px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      position: absolute;
+      transition: 300ms transform ease-in-out; }
+
+body[theme="blue"] .ca-nav-logo {
+  color: #ffffff; }
+
+body[theme="blue"] .ca-nav-theme .ca-nav-theme-label {
+  color: #ffffff; }
+
+body[theme="blue"] .ca-nav-theme .ca-nav-theme-switch {
+  background-color: #242d44; }
+  body[theme="blue"] .ca-nav-theme .ca-nav-theme-switch::before {
+    color: #ffffff; }
+
+body[theme="white"] .ca-nav-logo {
+  color: #36362c; }
+
+body[theme="white"] .ca-nav-theme .ca-nav-theme-label {
+  color: #36362c; }
+
+body[theme="white"] .ca-nav-theme .ca-nav-theme-switch {
+  background-color: #d2cdcd; }
+  body[theme="white"] .ca-nav-theme .ca-nav-theme-switch::before {
+    color: #36362c; }
+
+body[theme="purple"] .ca-nav-logo {
+  color: #ffe53d; }
+
+body[theme="purple"] .ca-nav-theme .ca-nav-theme-label {
+  color: #ffe53d; }
+
+body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch {
+  background-color: #1e0936; }
+  body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch::before {
+    color: #ffe53d; }
+
+body[theme="blue"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: #d03f2f;
+  transform: translate(-27px, -50%); }
+
+body[theme="white"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: #c85402;
+  transform: translate(-50%, -50%); }
+
+body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: #00ded0;
+  transform: translate(14px, -50%); }
+
+.ca-display {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+  white-space: break-spaces;
+  line-break: anywhere; }
+
+body[theme="blue"] .ca-display {
+  background-color: #181f33;
+  color: #ffffff; }
+
+body[theme="white"] .ca-display {
+  background-color: #eeeeee;
+  color: #36362c; }
+
+body[theme="purple"] .ca-display {
+  background-color: #1e0936;
+  color: #ffe53d; }
+
+.ca-keyboard {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; }
+
+body[theme="blue"] .ca-keyboard {
+  background-color: #242d44; }
+
+body[theme="white"] .ca-keyboard {
+  background-color: #d2cdcd; }
+
+body[theme="purple"] .ca-keyboard {
+  background-color: #1e0936; }

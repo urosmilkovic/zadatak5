@@ -1,0 +1,187 @@
+body[theme="blue"] {
+  background-color: $blue_bg;
+}
+body[theme="white"] {
+  background-color: $white_bg;
+}
+body[theme="purple"] {
+  background-color: $purple_bg;
+}
+
+.ca-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  .ca-calculator {
+    width: 100%;
+    max-width: 540px;
+    .ca-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ca-nav-logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+.ca-nav-theme {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  .ca-nav-theme-label {
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  .ca-nav-theme-switch {
+    width: 60px;
+    height: 18px;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "1 2 3";
+      position: absolute;
+      font-weight: bold;
+      left: 50%;
+      top: -15px;
+      font-size: 12px;
+      transform: translateX(-50%);
+      letter-spacing: 5px;
+      margin-left: 3px;
+      white-space: nowrap;
+    }
+    span {
+      display: block;
+      width: 14px;
+      height: 14px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      position: absolute;
+      transition: 300ms transform ease-in-out;
+    }
+  }
+}
+
+body[theme="blue"] {
+  .ca-nav-logo {
+    color: $white;
+  }
+  .ca-nav-theme {
+    .ca-nav-theme-label {
+      color: $white;
+    }
+    .ca-nav-theme-switch {
+      background-color: $blue_c1;
+      &::before {
+        color: $white;
+      }
+    }
+  }
+}
+body[theme="white"] {
+  .ca-nav-logo {
+    color: $white_text_default;
+  }
+  .ca-nav-theme {
+    .ca-nav-theme-label {
+      color: $white_text_default;
+    }
+    .ca-nav-theme-switch {
+      background-color: $white_c1;
+      &::before {
+        color: $white_text_default;
+      }
+    }
+  }
+}
+body[theme="purple"] {
+  .ca-nav-logo {
+    color: $purple_text_default;
+  }
+  .ca-nav-theme {
+    .ca-nav-theme-label {
+      color: $purple_text_default;
+    }
+    .ca-nav-theme-switch {
+      background-color: $purple_c1;
+      &::before {
+        color: $purple_text_default;
+      }
+    }
+  }
+}
+
+body[theme="blue"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: $blue_primary;
+  transform: translate(-27px, -50%);
+}
+
+body[theme="white"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: $white_primary;
+  transform: translate(-50%, -50%);
+}
+
+body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch span {
+  background-color: $purple_primary;
+  transform: translate(14px, -50%);
+}
+
+.ca-display {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+  white-space: break-spaces;
+  line-break: anywhere;
+}
+
+body[theme="blue"] .ca-display {
+  background-color: $blue_display;
+  color: $white;
+}
+
+body[theme="white"] .ca-display {
+  background-color: $white_display;
+  color: $white_text_default;
+}
+
+body[theme="purple"] .ca-display {
+  background-color: $purple_display;
+  color: $purple_text_default;
+}
+
+.ca-keyboard {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+body[theme="blue"] .ca-keyboard {
+  background-color: $blue_keyboard_bg;
+}
+
+body[theme="white"] .ca-keyboard {
+  background-color: $white_keyboard_bg;
+}
+
+body[theme="purple"] .ca-keyboard {
+  background-color: $purple_keyboard_bg;
+}
