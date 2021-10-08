@@ -146,6 +146,9 @@ body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch span {
   margin-bottom: 20px;
   white-space: break-spaces;
   line-break: anywhere;
+  @include md {
+    font-size: 32px;
+  }
 }
 
 body[theme="blue"] .ca-display {
@@ -172,6 +175,11 @@ body[theme="purple"] .ca-display {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  @include md {
+    padding: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
 }
 
 body[theme="blue"] .ca-keyboard {

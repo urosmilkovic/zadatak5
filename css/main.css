@@ -24,10 +24,19 @@ p {
   cursor: pointer; }
   .ca-button.ca-button-primary {
     font-size: 20px; }
+    @media (max-width: 768px) {
+      .ca-button.ca-button-primary {
+        font-size: 15px; } }
   .ca-button.ca-button.ca-button-secondary {
     font-size: 20px; }
+    @media (max-width: 768px) {
+      .ca-button.ca-button.ca-button-secondary {
+        font-size: 15px; } }
   .ca-button.ca-button.ca-button-default {
     font-size: 32px; }
+    @media (max-width: 768px) {
+      .ca-button.ca-button.ca-button-default {
+        font-size: 20px; } }
 
 body[theme="blue"] .ca-button.ca-button-primary {
   background-color: #d03f2f;
@@ -212,6 +221,9 @@ body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch span {
   margin-bottom: 20px;
   white-space: break-spaces;
   line-break: anywhere; }
+  @media (max-width: 768px) {
+    .ca-display {
+      font-size: 32px; } }
 
 body[theme="blue"] .ca-display {
   background-color: #181f33;
@@ -234,6 +246,11 @@ body[theme="purple"] .ca-display {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
+  @media (max-width: 768px) {
+    .ca-keyboard {
+      padding: 15px;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; } }
 
 body[theme="blue"] .ca-keyboard {
   background-color: #242d44; }

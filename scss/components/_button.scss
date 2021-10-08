@@ -8,12 +8,21 @@
   cursor: pointer;
   &.ca-button-primary {
     font-size: 20px;
+    @include md {
+      font-size: 15px;
+    }
   }
   &.ca-button.ca-button-secondary {
     font-size: 20px;
+    @include md {
+      font-size: 15px;
+    }
   }
   &.ca-button.ca-button-default {
     font-size: 32px;
+    @include md {
+      font-size: 20px;
+    }
   }
 }
 body[theme="blue"] .ca-button.ca-button-primary {
