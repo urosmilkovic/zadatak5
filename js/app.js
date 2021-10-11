@@ -12,6 +12,7 @@ const displayElement = document.querySelector(".ca-display");
 const handleCode = (code) => {
   try {
     if (code === "RESET") {
+      displayElement.textContent = "0";
     } else if (code === "DEL") {
       displayElement.textContent = displayElement.textContent.substring(
         0,
