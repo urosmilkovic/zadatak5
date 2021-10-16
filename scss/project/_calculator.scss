@@ -144,7 +144,8 @@ body[theme="purple"] .ca-nav-theme .ca-nav-theme-switch span {
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 20px;
-  white-space: break-spaces;
+  white-space: nowrap;
+  overflow: hidden;
   line-break: anywhere;
   @include md {
     font-size: 32px;
